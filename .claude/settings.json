@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tools/fetch_woolworths.py:*)",
+      "Bash(python tools/fetch_coles.py:*)",
+      "Bash(python tools/send_email.py:*)",
+      "Read(data/**)",
+      "Write(data/price_history.json)",
+      "Write(/tmp/**)"
+    ],
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Write(data/products.json)",
+      "Write(.env)",
+      "Write(.claude/**)",
+      "Write(CLAUDE.md)"
+    ]
+  },
+  "env": {
+    "PYTHONUNBUFFERED": "1"
+  }
+}

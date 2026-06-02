@@ -1,0 +1,35 @@
+{
+  "_comment_about_this_file": "This is your watchlist. Edit it freely — Claude reads it fresh every run and never writes to it. Add a product by copying one of the entries below and changing the fields. Remove a product by deleting its entry. Keep the JSON valid (no trailing commas).",
+
+  "_field_reference": {
+    "key": "Short snake_case ID used as the price-history key. Don't reuse keys.",
+    "name": "Display name — shown in the email.",
+    "search_terms": "1-3 strings to search for in each store. More specific = better match. Include brand and size if you care.",
+    "max_price": "Optional. If set, any price at or below this counts as a discount regardless of history.",
+    "stores": "Which stores to check. Default both. Omit to check both.",
+    "notes": "Optional free text. The agent reads it — useful for things like 'I need this brand specifically' or 'gluten-free only'."
+  },
+
+  "products": [
+    {
+      "key": "tim_tam_original",
+      "name": "Arnott's Tim Tam Original 200g",
+      "search_terms": ["tim tam original 200g", "arnotts tim tam original"],
+      "max_price": 3.50,
+      "stores": ["woolworths", "coles"]
+    },
+    {
+      "key": "vegemite_380g",
+      "name": "Vegemite 380g",
+      "search_terms": ["vegemite 380g", "vegemite jar 380"],
+      "max_price": 8.50,
+      "notes": "Brand-loyal — don't suggest Promite as a like-for-like, only as a fallback if Vegemite is gone for 3+ days."
+    },
+    {
+      "key": "rolled_oats_1kg",
+      "name": "Rolled oats 1kg",
+      "search_terms": ["rolled oats 1kg", "wholegrain oats 1kg"],
+      "notes": "Brand doesn't matter, cheapest wins. Must be 1kg (not 500g or 750g)."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# Node (in case you install Claude Code locally instead of globally)
+node_modules/
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local scratch / temp output
+/tmp/
+*.log
+digest.html
+*.tmp
